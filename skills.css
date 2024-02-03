@@ -1,0 +1,77 @@
+body {
+    background-color: #00abf0;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00abf0;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 0;
+    font-size: 30px;
+    position: relative;
+}
+h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #00abf0;
+    animation: showRight 1s ease forwards;
+    animation-delay: .1s;
+}
+section {
+    line-height: 2;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #081b29;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .1s;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.skill-icon,
+.education-icon {
+    margin-right: 12px;
+    font-size: 24px; 
+    color: #00abf0;
+}
+
+@keyframes showRight{
+    100%{
+        width: 0;
+    }
+}

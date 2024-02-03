@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+    <nav class="main-nav">
+        <input type="checkbox" id="check" class="nav-checkbox">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-sliders"></i>
+        </label>
+        <label class="logo">Zaid.</label>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="main-header">
+        <h1>Contact Us</h1>
+    </header>
+
+    <form action="contact.php" method="post" class="contact-form">
+        <label for="fullname" class="form-label">Visitor's Name:</label>
+        <input type="text" name="fullname" class="form-input" required>
+
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" name="email" class="form-input" required>
+
+        <label for="message" class="form-label">Message:</label>
+        <textarea name="usermessage" class="form-textarea" rows="4" required></textarea>
+
+        <input type="submit" value="SEND" class="submit-btn">
+        <input type="reset" value="Reset Form" class="reset-btn">
+    </form>
+
+    <section id="contact-info" class="contact-info-section">
+        <h2>Contact Information</h2>
+        <p>Email: mzaid35302@gmail.com</p>
+        <p>Phone: 03160688173</p>
+    </section>
+</body>
+
+</html>
